@@ -1,0 +1,534 @@
+/*
+    HOME PAGE
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+#title {
+    color: rgb(244, 162, 97);
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    height: 100px;
+    background-color: #FAF0E6;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    border-top: 5px solid #6c2626;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none; /* This changes the words of a list by removing the bullets */
+    width: 100%;
+    background-color: #FAF0E6;
+}
+
+.main{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) { /* This changes the enavigation bar when the screen has a maximum width of 400px */
+    
+    ul.sidenav li a {
+      text-align: center;
+      float: none;
+    }
+}
+
+.navbar li {
+    float: left;
+    margin: 0;
+    padding: auto;
+}
+
+.navbar li a {
+    display: block;
+    color: #6c2626;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar li a:hover:not(.active) { /* This changes the style of the nav bar when we hover at the links but don't click */
+    background-color: #e0cbb6;
+    color: #b39999;
+}
+
+.active { /* When we click */
+    background-color: #e0cbb6;
+    color: #b39999;
+}
+
+.first-line {
+    height: 500px;
+    background-color: #e0cbb6;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.first-line img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.first-line p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h2{
+    color: #6c2626;
+    font-family: "Bebas Neue",Impact, sans-serif;
+    font-size: 40px;
+}
+
+h1{
+    color: #6c2626;
+    font-family: "Bebas Neue",Impact, sans-serif;
+    font-size: 50px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(fondoamarillo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.regional-origin {
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: #e0cbb6;
+    border-radius: 20px;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+.regional-origin p {
+    font-size: 23px;
+}
+
+.regional-origin, .signature {
+    width: 48%;
+    text-align: center;
+}
+
+@media (max-width: 768px) { /* This edits the flexboxes when the screen has a max width of 768px */
+    .flexbox, .flexbox2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .regional-origin, .signature {
+        width: 100%;
+    }
+}
+
+.signature {
+  width: auto;
+  text-align: center;
+  margin: auto auto;
+  padding: 20px;
+}
+
+.signature img {
+    border-radius: 30%;
+}
+
+.signature p {
+    font-size: 30px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.our-history {
+    height: auto;
+    background-color: #e0cbb6;
+    padding: 10px;
+    text-align: center;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+.our-history p {
+    font-size: 21px;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.our-history h2 {
+    padding: 45px;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0cbb6;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recipes-link {
+    padding: 10px;
+    height: auto;
+    width: 55%;
+    background-color: #d5b89a;
+    text-align: center;
+}
+
+.recipes-link h2 {
+    padding: 15px;
+    font-family: "Bebas Neue",Impact, sans-serif;
+    font-size: 40px;
+}
+
+.recipes-link p {
+    font-size: 20px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.address {
+    margin: 15px auto;
+    height: auto;
+    width: 40%;
+    background-color: #d5b89a;
+    padding: 10px;
+    text-align: center;
+}
+
+.address p {
+    font-size: 20px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6c2626;
+}
+
+.footer {
+    height: auto;
+    background-color: #FAF0E6;
+    text-align: right;
+    padding: 10px;
+    font-style: italic;
+    padding-top: 150px;
+}
+
+/*
+    RECIPES PAGE
+*/
+
+.recipepage {
+    background-color: #f5e6ca;
+    padding: 10px;
+}
+
+.recipes-intro{
+    background-color: #e0cbb6;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+#click{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #a6682d;
+}
+
+.recipes-intro h2{
+    text-align: center;
+}
+
+.recipes-intro p{
+    font-size: 20px;
+    padding: 7px;
+    text-align: center;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.recipe {
+    background-color: #d5b89a;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    border: 1px solid #6c2626;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* The rgba is like rgb but we add the alpha channel, with the opacity of the color, which goes from 0 to 1 */
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe h3 {
+    font-family: "Bebas Neue",Impact, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: #6c2626;
+}
+
+.recipe p {
+    font-size: 20px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description {
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.description p {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.recipe-details {
+    background-color: #e0cbb6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* We add a gap of 10px between the recipes details */
+}
+
+.recipe-detail {
+    background-color: #d5b89a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+.recipe-detail h2 {
+    font-family: "Bebas Neue",Impact, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    color: #6c2626;
+}
+
+.recipe-detail ul, ol {
+    color:  #5d5b5b;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recipe-detail h3 {
+    color: #a6682d;
+    font-size: 24px;
+}
+
+.recipe-detail p {
+    color: #333;
+    font-size: 20px;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.image {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.image img {
+    width: 45%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.info {
+    max-width: 600px;
+}
+
+.recipe-details .recipe-detail {
+    margin-bottom: 50px;
+}
+
+.recipepage .recipe-details {
+    padding: 20px;
+    background-color: #f5e6ca;
+}
+
+/*
+    CONTACT PAGE
+*/
+
+#formm {
+    text-align: center;
+    color: #a6682d;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.contact{
+    background-color: #d5b89a;
+    padding: 10px;
+}
+
+.contact p{
+    font-size: 20px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.contact h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+}
+
+.contact-form {
+    background-color: #d5b89a;
+    padding: 15px;
+}
+
+.reviews {
+    background-color: #f5e6ca;
+    padding: 20px;
+}
+
+.reviews p {
+    font-size: 20px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.reviews h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#reviews {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: #6c2626;
+    display: flex; 
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    font-style: italic;
+    padding: 20px;
+}
+
+#review1, #review2 {
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+    max-width: 66%;
+    flex: 1;
+}
+
+#review3 {
+    display: block;
+    text-align: center;
+    max-width: 33%;
+    padding: 10px;
+}
+
+#button {
+    text-align: center;
+    width: 100%;
+    background-color: #d5b89a;
+    color: #6c2626;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#button:hover {
+    background-color: #e0cbb6;
+    color: #a6682d;
+}
+
+#form {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e0cbb6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#form label {
+    font-weight: bold;
+    color: #6c2626;
+    margin: 10px 0 5px;
+}
+
+#form input, #form select {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 10px;
+    border: 2px solid #6c2626;
+    font-size: 15px;
+    color: #a6682d;
+}
+
+#form input:focus, #form select:focus { /* This edits the input or select type when we focus (click to fill) */
+    outline: none; /* This removes the outline */
+    border-color: #b39999;
+    box-shadow: 0 0 5px rgba(108, 38, 38, 0.5);
+}
+
+.mainc {
+    margin: 0 auto;
+}
+
+/**
+    index
+*/
+
